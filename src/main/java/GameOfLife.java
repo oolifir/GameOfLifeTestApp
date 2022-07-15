@@ -35,7 +35,7 @@ public class GameOfLife {
       }
     }
 
-    universe = Arrays.stream(nextTrick).map(boolean[]::clone).toArray(boolean[][]::new);
+    universe = nextTrick;
   }
 
   protected void createUniverse(int height, int width) {
